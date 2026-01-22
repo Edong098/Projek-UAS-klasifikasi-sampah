@@ -14,7 +14,6 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
-
 # LOAD MODEL
 model = tf.keras.models.load_model("mobilenetv2_clahe_best.h5")
 
