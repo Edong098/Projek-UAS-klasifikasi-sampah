@@ -18,9 +18,8 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 # LOAD MODEL
 model = tf.keras.models.load_model("mobilenetv2_clahe_best.h5")
 
-# urutan ini sesuai dengan urutan saat training (0, 1, 2)
+# LABELS & DESCRIPTIONS
 class_names = ["organic", "paper", "plastic"] 
-
 descriptions = {
     "plastic": "Sampah plastik sulit terurai dan dapat mencemari tanah serta laut.",
     "paper": "Sampah kertas dapat didaur ulang namun konsumsi berlebihan menyebabkan deforestasi.",
